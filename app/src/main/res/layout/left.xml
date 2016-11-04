@@ -22,7 +22,7 @@
                 android:src="@drawable/sandra"
                 android:layout_weight="0.1"
                 app:siBorderWidth="2dp"
-                app:siBorderColor="@color/colorAccent" />
+                app:siBorderColor="@color/yellow" />
 
             <TextView
                 android:id="@+id/msgr"
