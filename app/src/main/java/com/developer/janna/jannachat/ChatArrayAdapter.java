@@ -10,8 +10,7 @@ package com.developer.janna.jannachat;
         import android.view.ViewGroup;
         import android.widget.ArrayAdapter;
         import android.widget.TextView;
-
-        import com.example.janna.chat_2.R;import java.text.DateFormat;
+        import java.text.DateFormat;
         import java.util.ArrayList;
         import java.util.Date;
         import java.util.List;
