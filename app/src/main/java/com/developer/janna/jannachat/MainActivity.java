@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.KeyEvent;
 import android.view.View;
 import android.widget.AbsListView;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.ListView;
@@ -19,13 +20,15 @@ public class MainActivity extends Activity {
     private EditText chatText;
     private ImageButton buttonSend;
     private boolean side = false;
+    private Button buttonChat;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.pantalla_chat);
 
+        buttonChat = (Button) findViewById(R.id.button_chat);
 
         buttonSend = (ImageButton) findViewById(R.id.send);
         listView = (ListView) findViewById(R.id.msgview);
