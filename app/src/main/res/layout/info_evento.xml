@@ -4,7 +4,7 @@
     android:layout_height="match_parent"
     android:background="@color/colorPrimaryLight"
     android:orientation="vertical"
-    tools:context=".MainActivity"
+    tools:context=".ChatActivity"
     android:weightSum="100">
 
 
@@ -13,13 +13,14 @@
         android:layout_height="0dp"
         android:layout_weight="10"
         android:orientation="horizontal"
-        android:weightSum="100"
+        android:weightSum="80"
         android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
         android:layout_marginTop="10dp">
 
         <Button
             android:layout_width="0dp"
-            android:layout_height="30dp"
+            android:layout_height="25dp"
             android:layout_weight="10"
             android:layout_gravity="center"
             android:background="@drawable/flecha_gris_izq"/>
@@ -27,27 +28,36 @@
         <TextView
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="60dp"
+            android:layout_marginStart="115dp"
             android:text="Whido"
             android:textSize="20dp"
             android:layout_weight="40"
-            android:gravity="center"/>
+            android:layout_gravity="center"/>
 
-        <Button
+        <ToggleButton
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="15"
-            android:background="@drawable/thumbs_up"/>
+            android:layout_height="25dp"
+            android:layout_weight="9"
+            android:layout_gravity="center"
+            android:textOn="@null"
+            android:textOff="@null"
+            android:layout_marginEnd="15dp"
+            android:background="@drawable/thumbs_up_selector" />
 
+        <ToggleButton
+            android:layout_width="0dp"
+            android:layout_height="25dp"
+            android:layout_weight="9"
+            android:layout_gravity="center"
+            android:layout_marginEnd="15dp"
+            android:textOff="@null"
+            android:textOn="@null"
+            android:background="@drawable/thumbs_down_selector"/>
         <Button
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="15"
-            android:background="@drawable/thumbs_down"/>
-        <Button
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="15"
+            android:layout_height="25dp"
+            android:layout_weight="9"
+            android:layout_gravity="center"
             android:background="@drawable/button_share"/>
 
     </LinearLayout>
@@ -61,22 +71,24 @@
         android:layout_marginStart="20dp"
         android:layout_marginEnd="20dp"
         android:layout_marginTop="10dp"
+        android:paddingBottom="20dp"
         android:weightSum="100"
         android:elevation="10dp">
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_weight="15"
+            android:layout_weight="10"
             android:layout_marginTop="25dp"
             android:layout_marginStart="30dp"
             android:text="TITLE"
+            android:textSize="20dp"
             android:id="@+id/titol"/>
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_weight="15"
+            android:layout_weight="10"
             android:layout_marginStart="30dp"
             android:text="PLACE"
             android:id="@+id/place"/>
@@ -84,7 +96,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_weight="15"
+            android:layout_weight="10"
             android:layout_marginStart="30dp"
             android:text="TIME"
             android:id="@+id/time"/>
@@ -92,7 +104,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_weight="15"
+            android:layout_weight="10"
             android:layout_marginStart="30dp"
             android:text="# PEOPLE ARE GOING"
             android:id="@+id/asistents"/>
@@ -100,12 +112,15 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_weight="40"
+            android:layout_weight="20"
             android:layout_marginStart="30dp"
             android:text="DESCRIPCIÓ"
             android:id="@+id/descripcio"/>
 
-
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="40"/>
 
 
     </LinearLayout>
@@ -118,17 +133,18 @@
         android:orientation="horizontal"
         android:weightSum="100">
 
-        <Button
+        <ToggleButton
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="50"
             android:layout_gravity="center"
-            android:text="JOIN!"
+            android:textOff="JOIN!"
+            android:textOn="JOINED!"
             android:textColor="@color/white"
             android:elevation="10dp"
             android:layout_marginLeft="60dp"
             android:layout_marginRight="40dp"
-            android:background="@drawable/button_shape"/>
+            android:background="@drawable/button_shape" />
         <Button
             android:layout_width="0dp"
             android:layout_height="wrap_content"
