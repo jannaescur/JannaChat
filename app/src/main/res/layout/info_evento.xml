@@ -56,7 +56,7 @@
         <Button
             android:layout_width="0dp"
             android:layout_height="25dp"
-            android:layout_weight="9"
+            android:layout_weight="10"
             android:layout_gravity="center"
             android:background="@drawable/button_share"/>
 
@@ -68,8 +68,8 @@
         android:layout_weight="75"
         android:orientation="vertical"
         android:background="@drawable/rounded_layout"
-        android:layout_marginStart="20dp"
-        android:layout_marginEnd="20dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
         android:layout_marginTop="10dp"
         android:paddingBottom="20dp"
         android:weightSum="100"
@@ -78,10 +78,11 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_weight="10"
+            android:layout_weight="20"
             android:layout_marginTop="25dp"
             android:layout_marginStart="30dp"
-            android:text="TITLE"
+            android:layout_marginEnd="20dp"
+            android:text="Presentació Llibre ‘Montserrat Roig. La memòria viva’"
             android:textSize="20dp"
             android:id="@+id/titol"/>
 
@@ -90,7 +91,7 @@
             android:layout_height="0dp"
             android:layout_weight="10"
             android:layout_marginStart="30dp"
-            android:text="PLACE"
+            android:text="Casa de Cultura"
             android:id="@+id/place"/>
 
         <TextView
@@ -98,7 +99,7 @@
             android:layout_height="0dp"
             android:layout_weight="10"
             android:layout_marginStart="30dp"
-            android:text="TIME"
+            android:text="Dijous 17 de novembre 19:00"
             android:id="@+id/time"/>
 
         <TextView
@@ -106,7 +107,7 @@
             android:layout_height="0dp"
             android:layout_weight="10"
             android:layout_marginStart="30dp"
-            android:text="# PEOPLE ARE GOING"
+            android:text="25 people are going"
             android:id="@+id/asistents"/>
 
         <TextView
@@ -114,13 +115,17 @@
             android:layout_height="0dp"
             android:layout_weight="20"
             android:layout_marginStart="30dp"
-            android:text="DESCRIPCIÓ"
+            android:layout_marginEnd="20dp"
+            android:text="Amb la presència de l’autora i recital de poesia.
+Hi haurà servei de barra i pica-pica.
+Organitza: Col·lectiu Olesa Feminista i Biblioteca Santa Oliva."
             android:id="@+id/descripcio"/>
 
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_weight="40"/>
+            android:layout_weight="35"
+            android:src="@drawable/sandra"/>
 
 
     </LinearLayout>
